@@ -22,7 +22,7 @@ function capitalize(str) {
 const ChatForum = ({ clerkUser, slug }) => {
   const [channel, setChannel] = useState();
   const client = useCreateChatClient({
-    apiKey: "q2j4wwrb6g3p", // Replace with your actual Stream Chat API key
+    apiKey: process.env.API_KEY,
     tokenOrProvider: clerkUser.token,
     userData: {
       id: clerkUser.id,
@@ -36,7 +36,6 @@ const ChatForum = ({ clerkUser, slug }) => {
 
     const createChannel = async () => {
       try {
-        // Sanitize the slug by replacing special characters with hyphens
         const sanitizedSlug = slug.replace(/[^a-zA-Z0-9]+/g, "-");
 
         const newChannel = client.channel("messaging", sanitizedSlug, {

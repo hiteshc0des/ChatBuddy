@@ -2,13 +2,12 @@
 import React from "react";
 import { UserButton } from "@clerk/nextjs";
 import Link from "next/link";
-// import { useUser } from "@clerk/nextjs";
 
 const Navbar = () => {
-  // const user = useUser();
-  // console.log(user.user?.id);
   return (
-    <nav className="bg-blue-500 p-4">
+    <nav className="bg-blue-500 p-4 sticky top-0 z-50">
+      {" "}
+      {/* Added sticky, top-0, and z-50 */}
       <div className="container mx-auto flex justify-between items-center">
         <Link href="/">
           <span className="text-white text-lg font-bold cursor-pointer">
