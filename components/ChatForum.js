@@ -22,7 +22,7 @@ function capitalize(str) {
 const ChatForum = ({ clerkUser, slug }) => {
   const [channel, setChannel] = useState();
   const client = useCreateChatClient({
-    apiKey: process.env.API_KEY,
+    apiKey: process.env.NEXT_PUBLIC_API_KEY,
     tokenOrProvider: clerkUser.token,
     userData: {
       id: clerkUser.id,
