@@ -32,12 +32,12 @@ npm install
 Create a .env.local file in the project root.
 Add the following environment variables:
 
-NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY (from your Clerk dashboard)
-CLERK_SECRET_KEY (from your Clerk dashboard)
-STREAM_API_KEY
-STREAM_API_SECRET
-STREAM_APP_ID (from your Stream dashboard)
-NGROK_AUTH_TOKEN (optional, if you want to use Ngrok)
+- NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY (from your Clerk dashboard)
+- CLERK_SECRET_KEY (from your Clerk dashboard)
+- STREAM_API_KEY
+- STREAM_API_SECRET
+- STREAM_APP_ID (from your Stream dashboard)
+- NGROK_AUTH_TOKEN (optional, if you want to use Ngrok)
 
 4. Run the development server:
 
